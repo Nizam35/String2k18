@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+	<title>Strings</title>
+<link href="stylesnav.css" type="text/css" rel="stylesheet">
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="=bootstrap-css">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="particles.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<!------ Include the above in your HEAD tag ---------->
+		<script>document.documentElement.className = 'js';</script>
+		<script>
+            $(document).ready(function(){
+    // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script type="text/javascript">
+		<!--
+		if (screen.width <= 699) {
+		document.location = "mobile.html";
+		}
+		//-->
+</script>
+<style>
+   ul li a{
+        text-decoration: none !important;
+       color:#444 !important;
+    }  
+    #mybtn{
+        border-radius: 50%;
+    }
+    #starts{
+    
+        transition: all 0.3s easy 0s;
+    }
+    img{
+        background-position: center;
+        background-size: cover !important;
+        width: 100%;
+    }
+</style>
+</head>
+<body style="overflow-x: hidden">
+<!-- particles.js container --> <div id="particles-js" style="height: 100vh;z-index: 5" ></div>
+
+<!--
+<div class="container" style="position: relative;background-color: aqua; height: 150px;left:-100px;">
+
+</div>
+-->
+	<div class="row" style="position:relative; z-index: 99">
+	<svg viewBox="0 0 1000 300">
+    <symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">STRINGS 2K18</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+        <div style="position: absolute;left: 50%;top: 170%;height:100px;"><a href="#start"><button type="button" class="btn btn-primary btn-lg" style="background-color:     " id="mybtn"><span class="fa fa-sort-down fa-lg" ></span></button></a></div>
+	</div>
+<div class="container-fluid" style="background-color: lightblue; z-index: 999;margin-top: 290px;">
+<nav style="text-decoration: none;" class="container">
+  <ul style="">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Points</a>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>
+     <li>
+      <a href="#">Registration</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<!-- <div style="background: linear-gradient(black, #b0adad); height: 100px;">dd</div> -->
+    
+    <section class="content" style="z-index: -5; " id="start">
+				<!-- <h2 class="content__title">_001</h2> -->
+				<div class="grid grid--effect-vega">
+					<a href="#" class="grid__item grid__item--c1"   data-toggle="modal" data-target="#mycook">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/cook.jpg" alt="CookWF" />
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Cooking Without Fire</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">6/4/18 @12.15 PM</span>
+								<span class="column__text">Mess Hall</span>
+								<span class="column__text">Basic Science</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2"  data-toggle="modal" data-target="#myselfie">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/1.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Selfie Hunt</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @9.30 AM</span>
+								<span class="column__text">B-302</span>
+								<span class="column__text">Mech</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#myfa">
+						<div id="stop" class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/fa.jpg" alt="mono"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Flower Arrangement</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @9:45 AM</span>
+								<span class="column__text">Chem. Lab</span>
+								<span class="column__text">Basic Science</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_002</h2> -->
+				<div class="grid grid--effect-castor">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#mycid">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/mc.jpg" alt="dub"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Mock CID</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @10.00 AM</span>
+								<span class="column__text">Auditorium</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myethnic">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/ethnic.jpg" alt="ethnic"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Ethnic Dekoracio</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @10:15 AM</span>
+								<span class="column__text">Lobby</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#myquiz">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/quiz.jpg" alt="quiz"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Quiz</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @10:30AM</span>
+								<span class="column__text">Intr. Sem Hall</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_003</h2> -->
+				<div class="grid grid--effect-hamal">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#mymono">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/monoact.jpg" alt="mono"  />
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Mono Act</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @11:00 AM</span>
+								<span class="column__text">Auditorium</span>
+								<span class="column__text">Mech</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myrang">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/rangoli.jpg" alt="rang"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Rangoli</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @2:00 PM</span>
+								<span class="column__text">Chem Lab</span>
+								<span class="column__text">BEADS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mypic">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/ps.jpg" alt="ps"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Pick n Speak</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @2:45 PM</span>
+								<span class="column__text">Auditorium</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_004</h2> -->
+				<div class="grid grid--effect-polaris">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#mydub">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/dub.jpg" alt="dub"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Dubbing</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @ 3:00 PM</span>
+								<span class="column__text">Inter Sem Hall</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#mytech">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/tech.jpg" alt="tech"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Tech Gala</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @3:15 PM</span>
+								<span class="column__text">Seminar Hall</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mypoet">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/poet.jpg" alt="poet"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Poetry</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @3:30 PM</span>
+								<span class="column__text">Auditorium</span>
+								<span class="column__text">Basic Science</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_005</h2> -->
+				<div class="grid grid--effect-alphard">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#myps">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/penc.jpg" alt="penc"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Pencil Sketch</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">	</span>
+								<span class="column__text">Drawing Room</span>
+								<span class="column__text">BEADS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myfifa">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/fifa.jpg" alt="fifa"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">FIFA</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @2:30 PM</span>
+								<span class="column__text">CS LAB</span>
+								<span class="column__text">Civil</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mysuc">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/suc.jpg" alt="suc"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Stand Up Comedian</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @3:45 PM</span>
+								<span class="column__text">Intr Sem Hall</span>
+								<span class="column__text">Civil</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_006</h2> -->
+				<div class="grid grid--effect-altair">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#mypho">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/pho.jpg" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Photography</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18</span>
+								<span class="column__text">_</span>
+								<span class="column__text">Civil</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myspl">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Special Talent</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">9/4/18 @4:00 PM</span>
+								<span class="column__text">Seminar Hall</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mymeh">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/meh.jpg" alt="Image"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Mahendi</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @9:30 AM</span>
+								<span class="column__text">A301</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_007</h2> -->
+				<div class="grid grid--effect-rigel">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#mymm">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/mm.jpg" alt="mm"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Movie Making</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @9:45 AM</span>
+								<span class="column__text">Intr sem Hall</span>
+								<span class="column__text">Mech</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#mymime">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/mime1.jpg" alt="mime"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">MIME</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @10:00 AM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">EC</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mycst">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/cst.jpg" alt="cst"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Counter Strike</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @10:30 AM</span>
+								<span class="column__text">CS LAB</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_008</h2> -->
+				<div class="grid grid--effect-canopus">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#myclg">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/clg.jpg" alt="clg"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Collage</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @10:45 AM</span>
+								<span class="column__text">Chem Lab</span>
+								<span class="column__text">Basic Science</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myncd">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/3.png" alt="ncd"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">News Paper Dressing</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @11:00 AM</span>
+								<span class="column__text">Seminar Hall</span>
+								<span class="column__text">Civil</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mydeb">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/deb.jpg" alt="deb"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Debate</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @11:00 AM</span>
+								<span class="column__text">Main stage</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_009</h2> -->
+				<div class="grid grid--effect-pollux">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#mypaint">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/paint.jpg" alt="paint"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Painting</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @11:15 AM</span>
+								<span class="column__text">Drawing Room</span>
+								<span class="column__text">BEADS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#mydumb">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/dumb.jpg" alt="dumb"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Dumb Charades</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @11:45 AM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">Civil</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#myfp">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/fp.jpg" alt="fp"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Face Painting</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @12:15 PM</span>
+								<span class="column__text">A302</span>
+								<span class="column__text">Mech</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content content--padded" >
+				<!-- <h2 class="content__title">_010</h2> -->
+				<div class="grid grid--effect-deneb">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#myjam">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/jam.jpg" alt="jam"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">JAM</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @12:30 PM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">Civil</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myth">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/th.jpg" alt="th"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Treasure Hunt</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @1:00 PM</span>
+								<span class="column__text">Seminar Hall</span>
+								<span class="column__text">Mech</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#myrw">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/rw.jpg" alt="rw" height="200px;"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Ramp Walk</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @2:00 PM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">Mech</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="content">
+				<!-- <h2 class="content__title">_005</h2> -->
+				<div class="grid grid--effect-alphard">
+					<a href="#" class="grid__item grid__item--c1" data-toggle="modal" data-target="#myclay">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/clay.jpg" alt="clay"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Clay Modelling</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @2:30 PM</span>
+								<span class="column__text">B203</span>
+								<span class="column__text">BEADS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2" data-toggle="modal" data-target="#myskit">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/skit.jpg" alt="skit"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Skit</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @2:30 PM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mydance">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/sd.jpg" alt="dance"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Dance</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @3:00 PM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3" data-toggle="modal" data-target="#mysing">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="images/gs.jpg" alt="sing" height="200px;"/>
+							</div>
+						</div>
+						<div class="grid__item-caption">
+							<h3 class="grid__item-title">Singing</h3>
+							<div class="column column--left">
+								<span class="column__text">Date & Time</span>
+								<span class="column__text">Venue</span>
+								<span class="column__text">Organisers</span>
+							</div>
+							<div class="column column--right">
+								<span class="column__text">10/4/18 @3:00 PM</span>
+								<span class="column__text">Main Stage</span>
+								<span class="column__text">CS/IS</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>			
+            
+            
+            <p class="copyright text-center text-muted">STRINGS 2K18</p>
+            <p class=" text-center " style="color: skyblue">&copy;BEARYS INSTITUTE OF TECHNOLOGY, MANGALORE</p>
+            <a  href="#" data-toggle="modal" data-target="#developers" class="text-center"><p style="font-size: 12px;">Developed by 8th Sem CSE</p></a>
+            
+<!--developers-->
+<div class="modal fade" id="developers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: thistle">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: darkblue">Ahmed Nizamuddin & Ahamad Irfan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+          <h2>8th Sem, CSE</h2>
+       
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="mycook" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Cooking Without Fire</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 6/4/18</p>
+        <p>Time : 2:15 PM</p>
+        <p>Venue : Mess Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Imran U A<br> Prof. Mustafa Khaleel<br> Prof. Safwan</p>
+        <p>Student Co-ordinators : <br><br>Muzamil (8th sem)<br>Nazmiya (8th sem) </p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!------->
+
+<!-- Modal -->
+<div class="modal fade" id="myselfie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Selfie Hunt</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 9:30 AM</p>
+        <p>Venue : Gather at B302 </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Sudhir S<br> Prof. Sajjan</p>
+        <p>Student Co-ordinators : <br><br>Ismail Suja (8th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myfa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Flower Arrangement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 9:45 AM</p>
+        <p>Venue : Chemistry Lab </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Vinutha S</p>
+        <p>Student Co-ordinators : <br><br>Rinaaz (8th sem)<br>Mubarish (6th sem)<br>Rufa (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mycid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Mock CID</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 10:00 AM</p>
+        <p>Venue : Auditorium </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Ajesh</p>
+        <p>Student Co-ordinators : <br><br>Arshad Ali (8th sem)<br>Shinoriya <br>Rabiya (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myethnic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Ethnic Dekoracio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 10:15 AM</p>
+        <p>Venue : Gather at Seminar Hall or Open Area </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Asif Mulla</p>
+        <p>Student Co-ordinators : <br><br>Akshatha (8th sem)<br>Athira (6th sem) <br>Thaseem (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myquiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Quiz</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 10:30 AM</p>
+        <p>Venue : Internation Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Shameez</p>
+        <p>Student Co-ordinators : <br><br>Nihma (8th sem)<br>Preema (6th sem) <br>Shamshad (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mymono" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Mono Act</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 11:00 AM</p>
+        <p>Venue : Auditorium </p>
+        <p>Faculty Co-ordinators : <br><br>Dr. Sharath</p>
+        <p>Student Co-ordinators : <br><br>Yaseen (8th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myrang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Rangoli</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 2:00 PM</p>
+        <p>Venue : Chemistry Lab and Lobby </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Abijith Jain</p>
+        <p>Student Co-ordinators : <br><br></p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="mypic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Pick and Speak</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 2:45 PM</p>
+        <p>Venue : Auditorium </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Nithin Kumar</p>
+        <p>Student Co-ordinators : <br><br>Kaulath (8th sem)<br>Suhana (6th sem)<br>Bathish (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mydub" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Dubbing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 3:00 PM</p>
+        <p>Venue : International Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Sinan</p>
+        <p>Student Co-ordinators : <br><br>Fakiza (8th sem)<br>Thabseera (6th sem)<br>Naumeeza (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="mytech" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Tech Gala</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 3:15 PM</p>
+        <p>Venue : Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Abdul Jabbar</p>
+        <p>Student Co-ordinators : <br><br>Ashfiya (8th sem)<br>Balkees (6th sem)<br>Razi (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mypoet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Poetry</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 3:30 PM</p>
+        <p>Venue : Auditorium </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Anjum Khan</p>
+        <p>Student Co-ordinators : <br><br>Vahida beebi (8th sem)<br>Ayaz (6th sem)<br>Ansari (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Pencil Sketch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 3:30 PM</p>
+        <p>Venue : Drawing Room </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Abhijith Jain</p>
+        <p>Student Co-ordinators : <br><br></p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myfifa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">FIFA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 2:30 PM</p>
+        <p>Venue : CS (PCD) LAB </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Zaheer</p>
+        <p>Student Co-ordinators : <br><br>Rilah (8th sem)<br>Shabeer (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mysuc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Stand Up Comedian</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 3:45 PM</p>
+        <p>Venue : Internation Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Karthikeyan</p>
+        <p>Student Co-ordinators : <br><br>Adeeb (8th sem)<br>Shamna (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mypho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Photography</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : </p>
+        <p>Venue :  </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Basawaraj N H</p>
+        <p>Student Co-ordinators : <br><br>Musthafa (8th sem)<br>Shazuly (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myspl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Special Talent</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 9/4/18</p>
+        <p>Time : 4:00 PM</p>
+        <p>Venue : Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Mubeena</p>
+        <p>Student Co-ordinators : <br><br>Mohd. Hanif (8th sem)<br>Iram (6th sem)<br>Saniya (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="mymeh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Mahendi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 9:30 AM</p>
+        <p>Venue : A301 </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Poornima</p>
+        <p>Student Co-ordinators : <br><br>Deekshitha (8th sem)<br>Deekshitha (6th sem)<br>Abida (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mymm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Movie Making Presentation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 9:45 AM</p>
+        <p>Venue : International Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Nithin salian</p>
+        <p>Student Co-ordinators : <br><br>Sinan (8th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mymime" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">MIME</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 10:00 AM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Prashanth Kumar</p>
+        <p>Student Co-ordinators : <br><br>Safrina (8th sem)<br>Rafeedha (6th sem)<br>Rabiya (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mycst" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Counter Strike</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 10:30 AM</p>
+        <p>Venue : CS LAB </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Abdul Khader</p>
+        <p>Student Co-ordinators : <br><br>Shawoor (8th sem)<br>Ziyan (6th sem)<br>Faizal (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myclg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Collage</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 10:45 AM</p>
+        <p>Venue : Chemistry Lab </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Sandeep</p>
+        <p>Student Co-ordinators : <br><br>Swadiqa (8th sem)<br>Rizwana (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myncd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">News Paper Dressing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 11:00 AM</p>
+        <p>Venue : Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Sudesh</p>
+        <p>Student Co-ordinators : <br><br>Aysha M Y (8th sem)<br>Shareeh (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mydeb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Debate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 11:00 AM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Najma</p>
+        <p>Student Co-ordinators : <br><br>Kausar (8th sem)<br>Irshad (6th sem)<br>Nabeeha (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mypaint" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Paint</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 11:15 AM</p>
+        <p>Venue : Drawing Room </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Abhijith Jain</p>
+        <p>Student Co-ordinators : <br><br></p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mydumb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Dumb Charades</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 11:45 AM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Harshith</p>
+        <p>Student Co-ordinators : <br><br>Safwan (8th sem)<br>Poornesh (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myfp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Face Painting</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 12:15 PM</p>
+        <p>Venue : A302 </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Shashi Kumar G</p>
+        <p>Student Co-ordinators : <br><br>Mubeen (8th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myjam" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">JAM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 12:30 PM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Akshatha</p>
+        <p>Student Co-ordinators : <br><br>Shabam (8th sem)<br>Wasim (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Treasure Hunt</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 1:00 PM</p>
+        <p>Venue : Seminar Hall </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Imran Mukhashi<br>Prof. Muhammed Kafil</p>
+        <p>Student Co-ordinators : <br><br>Hakeem (8th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myrw" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Ramp Walk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 2:00 PM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Vasanth Kumar</p>
+        <p>Student Co-ordinators : <br><br>Faizan (8th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myclay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Clay Modelling</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 2:30 PM</p>
+        <p>Venue : B203 </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Abhijith Jain</p>
+        <p>Student Co-ordinators : <br><br></p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myskit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Skit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <p>Date : 10/4/18</p>
+        <p>Time : 2:30 PM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Sunitha<br>Prof. Najma</p>
+        <p>Student Co-ordinators : <br><br>Ismath Jahan (8th sem)<br>Ranima (6th sem)<br>Safnaz (6th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mydance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Dancing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+       <h3 style="color: firebrick">Solo and Group</h3>
+        <p>Date : 10/4/18</p>
+        <p>Time : 3:00 PM</p>
+        <p>Venue : Main stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Arpana<br>Prof. Ankitha</p>
+        <p>Student Co-ordinators : <br><br>Muhsina (8th sem)<br>Thuhara (6th sem)<br>Madeeha (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mysing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: red">Singing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: blue">
+        <h3 style="color: firebrick">Solo and Group</h3>
+        <p>Date : 10/4/18</p>
+        <p>Time : 3:30 PM</p>
+        <p>Venue : Main Stage </p>
+        <p>Faculty Co-ordinators : <br><br>Prof. Jalaluddeen</p>
+        <p>Student Co-ordinators : <br><br>Thasrifa (8th sem)<br>Famidha (6th sem)<br>Naziya (4th sem)</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			[].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+				new VegaFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+				new CastorFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+				new HamalFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+				new PolarisFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+				new AlphardFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+				new AltairFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+				new RigelFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function(stackEl) {
+				new CanopusFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+				new PolluxFx(stackEl);
+			});
+			[].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+				new DenebFx(stackEl);
+			});
+		})();
+		</script>
+		
+</body>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+<script src="particles.js"></script>
+
+<!-- JS code -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!--JS below-->
+
+
+</html>

@@ -1,0 +1,8 @@
+/* Your custom styles */
+.service-box img{
+    height:200px;
+    width:70%;
+}
+a{
+    text-decoration: none!important;
+}
